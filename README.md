@@ -13,7 +13,8 @@ Create a new environment
 
 conda create -p venv python==3.9 -y
 or 
- 
+
+python -m venv D:\endtoendMLProjects\bostonhousepricing\venv
 ....
 
 To acivate virtual env
