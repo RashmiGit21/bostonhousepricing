@@ -9,6 +9,7 @@ app=Flask(__name__)
 ## Load the model
 regmodel=pickle.load(open('regmodel.pkl','rb'))
 scalar=pickle.load(open('scaling.pkl','rb'))
+
 @app.route('/')
 def home():
     return render_template('home.html')
@@ -33,4 +34,3 @@ def predict():
 
 if __name__=="__main__":
     app.run(debug=True)
-   
